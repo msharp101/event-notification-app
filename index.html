@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
 	<head>
+		<!-- JS -->
 	    <script src="bower_components/angular/angular.min.js"></script>
 	    <script src="bower_components/angular-route/angular-route.min.js"></script>
 	    <script src="app/app.js"></script>
 	    <script src="app/app.routes.js"></script>
-	    <script src="app/components/greeting/greeting-controller.js"></script>
+	    <script src="app/components/welcome-screen/welcome-controller.js"></script>
+
+	    <!-- CSS -->
+	    <link rel="stylesheet" type="text/css" href="app/shared/css/main.css">
+	    <link rel="stylesheet" type="text/css" href="app/components/footer/footer.css">
+
+	    <!-- External Scripts -->
+	    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<ng-view></ng-view>
+		<div class="footer">
+			<div class="center footer-text">
+				<p><a href="">About Bandify</a> | Legal | Copyright 2016 Matthew Sharp</p>
+			</div>
+
+		</div>
 	</body>
 </html>

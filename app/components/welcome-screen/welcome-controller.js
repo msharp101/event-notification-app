@@ -1,13 +1,11 @@
-  
-// logger.js
 (function() {
     'use strict';
 
     angular
         .module('app')
-        .controller('GreetingController', GreetingController);
+        .controller('WelcomeController', WelcomeController);
 
-    function GreetingController() { 
+    function WelcomeController() { 
     	var vm = this;
     	vm.who = 'World!';
     }

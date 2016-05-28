@@ -8,13 +8,8 @@
     function routes($routeProvider) { 
       $routeProvider
       .when('/', {
-         templateUrl: './app/components/greeting/show-greeting-1.html', 
-         controller: 'GreetingController',
-         controllerAs: 'vm'
-      })
-      .when('/show-greeting-1', {
-         templateUrl: 'components/greeting/show-greeting-1.html', 
-         controller: 'GreetingController',
+         templateUrl: './app/components/welcome-screen/welcome-view.html', 
+         controller: 'WelcomeController',
          controllerAs: 'vm'
       })
       .otherwise({

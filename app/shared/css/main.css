@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+	font-family: 'Poiret One', Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.center {
+	margin:0 auto;
+}
+
