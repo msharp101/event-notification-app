@@ -1,0 +1,8 @@
+{
+    "name": "event-notification-app",
+    "description": "An Angular App to Alert Subscribers About An Event",
+    "version": "1.0.0",
+    "dependencies": {
+      "angular": "1.4.x"
+    }
+}

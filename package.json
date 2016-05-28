@@ -1,0 +1,15 @@
+{
+  "name": "event-notification-app",
+  "version": "1.0.0",
+  "description": "An event notification app.",
+  "main": "index.html",
+  "dependencies": {
+    "gulp-connect": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Sharp",
+  "license": "ISC"
+}
