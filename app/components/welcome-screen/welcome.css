@@ -60,7 +60,7 @@
 
 .login-field {
 	float:right; 
-	padding:1.5rem 0.5rem;
+	padding:1.5rem 0rem;
 	font-size:1.5em;
 }
 
@@ -74,10 +74,11 @@
 	float:left; 
 	margin-left:0.3rem;
 	font-size:0.7em;
-	width:60%;
+	width:90%;
 	-webkit-border-radius: 0.8rem;
 	-moz-border-radius: 0.8rem;
 	border-radius: 0.8rem;
+	padding-left:0.3rem;
 }
 
 .login-field button{
