@@ -12,6 +12,11 @@
          controller: 'WelcomeController',
          controllerAs: 'vm'
       })
+      .when('/landing-screen', {
+         templateUrl: './app/components/landing-screen/landing-view.html', 
+         controller: 'LandingController',
+         controllerAs: 'vm'
+      })
       .otherwise({
          redirectTo: '/'
       });
