@@ -11,9 +11,24 @@
 	top:0;
 	min-height:7rem;
 	width:100%;
-	background-color: black;
-	opacity: 0.1;
-    filter: alpha(opacity=10); /* For IE8 and earlier */
+	background: rgba(0,0,0,0.1);
+}
+
+.welcome-header-options {
+	position:relative;
+	float:right;
+}
+
+.welcome-header-options a {
+	color: #ffffff;
+	margin: 3em;
+	display: block;
+	position: relative;
+	float:right;
+}
+
+.welcome-header-options a:hover {
+	color: #dddddd;
 }
 
 .iphone-image {
