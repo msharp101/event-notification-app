@@ -19,7 +19,7 @@ gulp.task('reload', function () {
  
 //specify files to watch, and then call reload function on change
 gulp.task('watch', function () {
-  gulp.watch(['*.html', 'app/*.js', 'app/*/*/*.js', 'app/shared/css/*.css'], ['reload']);
+  gulp.watch(['*.html', 'app/*.js', 'app/*/*/*.*', 'app/shared/css/*.css'], ['reload']);
 });
  
 //gulp default will run connect and watch
