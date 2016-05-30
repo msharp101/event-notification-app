@@ -4,7 +4,8 @@
   "description": "An event notification app.",
   "main": "index.html",
   "dependencies": {
-    "gulp-connect": "^4.0.0"
+    "gulp-connect": "^4.0.0",
+    "jasmine-core": "^2.4.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
