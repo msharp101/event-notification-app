@@ -8,9 +8,9 @@
 	</div>
 	<div class="login-bar cssSlideUp" ng-show="vm.loginVisible">
 		<form novalidate class="simple-form">
-			<div class="login-field"><button type="submit" ng-click="" tabindex=3/><a>Submit</a></button></div>
-    		<div class="login-field"><input type="password" ng-model="user.email" tabindex=2 placeholder="Password" /></div>
-    		<div class="login-field"><input type="text" ng-model="user.name" tabindex=1 placeholder="Username"/></div>
+			<div class="login-field"><button type="submit" ng-click="vm.attemptLogin()" tabindex=3/><a>Submit</a></button></div>
+    		<div class="login-field"><input type="password" ng-model="vm.password" tabindex=2 placeholder="Password" /></div>
+    		<div class="login-field"><input type="text" ng-model="vm.username" tabindex=1 placeholder="Username"/></div>
     	</form>
 	</div>
 	<div class="welcome-left"><img class="iphone-image" src="app/shared/img/iphone5.png" alt="iphone 5">

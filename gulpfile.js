@@ -2,6 +2,7 @@
 //specify required gulp dependencies
 var gulp = require('gulp'),
   connect = require('gulp-connect');
+  stubby = require('gulp-stubby-server');
  
 //define gulp server task with livereload as true
 gulp.task('connect', function() {
@@ -21,6 +22,15 @@ gulp.task('reload', function () {
 gulp.task('watch', function () {
   gulp.watch(['*.html', 'app/*.js', 'app/*/*/*.*', 'app/shared/css/*.css'], ['reload']);
 });
+
+gulp.task('stubby', function(cb) {
+    var options = {
+        files: [
+            'mocks/*.yaml'
+        ]
+    };
+    stubby(options, cb);
+});
  
 //gulp default will run connect and watch
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['connect', 'watch', 'stubby']);
