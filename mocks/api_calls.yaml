@@ -8,5 +8,5 @@
    response:
       headers:
          content-type: application/json
-      latency: 1000
+      latency: 500
       status: 200

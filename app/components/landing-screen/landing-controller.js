@@ -7,6 +7,5 @@
 
     function LandingController() { 
     	var vm = this;
-    	vm.who = 'World!';
     }
 })();

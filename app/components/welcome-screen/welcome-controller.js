@@ -5,9 +5,9 @@
         .module('app')
         .controller('WelcomeController', WelcomeController);
 
-    WelcomeController.$inject = ['welcomeFactory'];
+    WelcomeController.$inject = ['$location','welcomeFactory'];
 
-    function WelcomeController(welcomeFactory) { 
+    function WelcomeController($location, welcomeFactory) { 
     	var vm = this;
     	vm.loginVisible = false;
     	vm.toggleLogin = toggleLogin;
@@ -24,7 +24,10 @@
     			password: vm.password
     		};
 
-			welcomeFactory.send(payload).then(function(response) { alert(response.status)}, function() {});
+			welcomeFactory.send(payload).then(function(response) { 
+
+                $location.path("/landing-screen");
+            }, function() {});
 
     	}
     };
